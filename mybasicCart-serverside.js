@@ -38,7 +38,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-app.get('/cart', (req, resp) => { // '/cart is path of the new result pg
+app.get('/cart', (req, resp) => { // '/cart is path which new result pg will be directed
 
     //console.info('customer_name: ', req.cookies['customer_name']);
 

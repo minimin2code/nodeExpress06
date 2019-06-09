@@ -29,7 +29,7 @@ app.set('views', __dirname + '/views');
 // body of form (url encoded), express needs body data to be parsed
 app.use(bodyParser.urlencoded());
 
-// from index.html, name to be queried. '/cart' is the new page where your result is displayed, must be same as the name in index file
+// from index.html, name to be queried. '/cart' is the new page where your result is directed, must be same as the name in index file
 app.get('/cart', (req, resp) => {
     const nameabc = req.query.name; // string
     let cart = []; // assigned/originated in server; so is an object?
